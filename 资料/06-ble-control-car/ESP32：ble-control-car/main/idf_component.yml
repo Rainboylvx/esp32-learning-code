@@ -1,0 +1,7 @@
+## IDF Component Manager Manifest File
+dependencies:
+  led_strip:
+    version: "^2.0.0"
+  ## Required IDF version
+  idf:
+    version: ">=5.1.0"

@@ -1,0 +1,90 @@
+menu "Car Config Example"
+
+    config MOTOR_A_IN1
+        int 'The Motor 1 pin.'
+        default 7
+        help
+            Motor 1 pin.
+
+    config MOTOR_A_IN2
+        int 'The Motor 2 pin.'
+        default 6
+        help
+            Motor 2 pin.
+
+    config MOTOR_B_IN3
+        int 'The Motor 3 pin.'
+        default 5
+        help
+            Motor 4 pin.
+
+    config MOTOR_B_IN4
+        int 'The Motor 4 pin.'
+        default 4
+        help
+            Motor 4 pin.
+
+    config KEY_SETUP
+        bool 'Enable The WiFi Configuration Button.'
+        default y
+        help
+            If enabled, long press for LONG_PRESS_TIME seconds to enter the network configuration mode.
+
+    config KEY_PIN
+        int 'The Configuration Button pin.'
+        default 12
+        help
+            The Configuration Button pin.
+
+    config LONG_PRESS_TIME
+        int 'The Configuration Button Long press time(s).'
+        default 3
+        help
+            The Configuration Button Long press time.
+
+    config LED_SETUP
+        bool 'Enable the LED.'
+        default y
+        help
+            If enabled, the green indicator light will illuminate for successful MQTT connection, and the blue indicator light will illuminate for AP WiFi network configuration.
+
+    choice BOARD_TYPE
+        prompt "Types of Development Boards"
+        default BOARD_TYPE_S3
+        help
+            Types of Development Boards.
+
+        config BOARD_TYPE_S3
+            bool "ESP32-S3"
+        config BOARD_TYPE_C3
+            bool "ESP32-C3"
+    endchoice
+
+    if BOARD_TYPE_S3
+    config LED_PIN
+        int 'The LED pin.'
+        default 48
+        help
+            The LED pin.
+
+    config MAX_LEDS
+        int 'Maximum number of LEDs.'
+        default 1
+        help
+            Maximum number of LEDs.
+    endif
+
+    if BOARD_TYPE_C3
+    config LED_PIN1
+        int 'The LED1 pin.'
+        default 12
+        help
+            The LED1 pin.
+    config LED_PIN2
+        int 'The LED2 pin.'
+        default 13
+        help
+            The LED2 pin.
+    endif
+
+endmenu

@@ -1,0 +1,10 @@
+1、电机与开发板控制部分：
+	A) ESP32 S3开发板: 驱动电机1 2 3 4 分别对应S3开发板引脚7 6 5 4，可修改配置Kconfig.projbuild更换其它的引脚。
+	B) ESP32 C3开发板：驱动电机1 2 3 4 分别对应C3开发板引脚5 4 8 9，可修改Kconfig.projbuild更换其它的引脚。
+
+2、LED灯LED灯：
+
+	A) ESP32 S3开发板: 对应S3开发板引脚48
+	B) ESP32 C3开发板：单色LED灯对应C3开发板引脚12 13
+
+3、WiFi控制下，Kconfig.projbuild配置开启KEY_SETUP可以实现长按轻触按键进入配网。
