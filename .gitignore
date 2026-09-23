@@ -1,0 +1,9 @@
+# 本地素材目录（从 y9000x 收集的 ESP-IDF 工程，仅本地留存，不入库）
+资料/
+
+# 面向 agent 的本地说明，不入库
+AGENTS.md
+
+# ESP-IDF 构建产物
+build/
+managed_components/
