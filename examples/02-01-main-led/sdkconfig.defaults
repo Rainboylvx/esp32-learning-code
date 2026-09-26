@@ -1,2 +1,4 @@
+# DNESP32S3 使用 ESP32-S3 芯片。
 CONFIG_IDF_TARGET="esp32s3"
+# 开发板搭载 16 MB Flash；首次配置工程时以这里的默认值为准。
 CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
