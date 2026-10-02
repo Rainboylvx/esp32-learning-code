@@ -31,7 +31,7 @@ esp_err_t key_init(void)
 
 key_event_t key_scan(void)
 {
-    const int level = gpio_get_level(BOOT_KEY_GPIO);
+    const int level = gpio_get_level(BOOT_KEY_GPIO); // 1 0
 
     if (s_key_ready && level == BOOT_KEY_ACTIVE_LEVEL) {
         // 首次读到低电平后等待机械触点稳定，再进行第二次确认。
