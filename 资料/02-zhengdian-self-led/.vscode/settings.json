@@ -1,5 +1,8 @@
 {
     "idf.currentSetup": "/home/rainboy/.espressif/v5.5.4/esp-idf",
     "idf.port": "/dev/ttyACM0",
-    "idf.flashType": "UART"
+    "idf.flashType": "UART",
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json"
 }

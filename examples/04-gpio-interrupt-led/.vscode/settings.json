@@ -1,0 +1,20 @@
+{
+    "idf.currentSetup": "/Users/rainboymac/.espressif/v5.5.5/esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.customExtraVars": {
+        "OPENOCD_USB_ADAPTER_LOCATION": "3-1.1",
+        "IDF_TARGET": "esp32s3"
+    },
+    "clangd.path": "/Users/rainboymac/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clangd",
+    "clangd.arguments": [
+        "--background-index",
+        "--query-driver=**",
+        "--compile-commands-dir=/Users/rainboymac/mycode/esp32-blog/examples/04-gpio-interrupt-led/build"
+    ],
+    "idf.port": "/dev/tty.usbmodem31101",
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json"
+}
