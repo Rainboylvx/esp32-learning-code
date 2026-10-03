@@ -52,8 +52,8 @@ static void exit_task(void *arg)
 void app_main(void)
 {
     ESP_ERROR_CHECK(led_init());
-
-    QueueHandle_t event_queue = xQueueCreate(EVENT_QUEUE_LENGTH, sizeof(uint32_t));
+// 句柄 -> handle 
+    QueueHandle_t event_queue = xQueueCreate(EVENT_QUEUE_LENGTH, sizeof(uint32_t));// unsigned int
     ESP_ERROR_CHECK(event_queue != NULL ? ESP_OK : ESP_ERR_NO_MEM);
 
     ESP_ERROR_CHECK(exit_init(event_queue));
