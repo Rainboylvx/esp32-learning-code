@@ -4,3 +4,10 @@ AGENTS.md
 # ESP-IDF 构建产物
 build/
 managed_components/
+
+# macOS
+.DS_Store
+
+# ESP-IDF 生成的本地配置（以 sdkconfig.defaults 为准）
+sdkconfig
+sdkconfig.old

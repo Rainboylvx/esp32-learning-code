@@ -1,0 +1,2 @@
+# 与 sdkconfig.defaults 叠加，仅用于构建故障演示版。
+CONFIG_DEMO_WDT_FAULT=y

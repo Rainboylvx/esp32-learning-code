@@ -1,0 +1,8 @@
+menu "Watchdog teaching demo"
+    config DEMO_WDT_FAULT
+        bool "Inject a busy loop after three healthy iterations"
+        default n
+        help
+            Intentionally starve CPU0 for six seconds. TWDT panics after
+            three seconds. Disable this option to run the repaired version.
+endmenu
